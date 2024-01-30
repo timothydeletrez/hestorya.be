@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-title: 'Climate Crisis';
+    --font-subtitle: 'Montserrat';
+    --font-para: 'Poppins';
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+/* ========================================= */
+/*  Section Landing */
+/* ========================================= */
+
+section.home {
+    background: linear-gradient(-45deg, #66838F, #485F6C, #20313F, #061220);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+section.home .box h1 {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 6em;
+    text-align: center;
+    padding-top: 350px;
+    text-transform: capitalize;
+}
+
+section.home .box h1::after {
+    content: "👋";
+    font-family: Poppins;
+    font-weight: 100;
+}
+
+section.home .box .arrowbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.home .box .arrowbox a img {
+    padding: 20px 22px;
+    margin-top: 50px;
+    width: 25px;
+    color: white;
+    border: solid 1px #fff;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+}
+
+section.home .box .arrowbox a img:hover {
+    width: 30px;
+    padding: 25px 28px;
+    transform: translateY(-5px);
+}
+
+/* ========================================= */
+/*  Section Aboutme */
+/* ========================================= */
+
+section.aboutme {
+    height: 100vh;
+    background: #030A12;
+    padding: 100px;
+
+    /* TO REMOVE */
+    color: white;
+}
+
+section.aboutme h1.title {
+    font-family: var(--font-title);
+    font-weight: 100;
+    text-transform: uppercase;
+    display: flex;
+    font-size: 3em;
+}
+
+section.aboutme h1.title::before {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 55px;
+    background: linear-gradient(to right, #66838F, #061220);
+    margin-right: 30px;
+    transform: translateY(6px);
+}
+
+section.aboutme div.box {
+    display: flex;
+}
+
+
+section.aboutme div.box img.pdp {
+    width: 512px;
+    height: 512px;
+    margin-top: 85px;
+}
+
+section.aboutme div.box div.presentation {
+    margin-top: 85px;
+    margin-left: 85px;
+}
+
+section.aboutme div.box div.presentation h1.name {
+    font-family: var(--font-subtitle);
+    font-size: 3.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+section.aboutme div.box div.presentation h1.name::after {
+    content: "R.A.";
+    font-size: 0.4em;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+section.aboutme div.box div.presentation p.desc {
+    font-family: var(--font-para);
+    margin-top: 40px;
+    max-width: 850px;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+section.aboutme div.box div.presentation div.links {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin-top: 40px;
+}
+
+section.aboutme div.box div.presentation div.links li a img {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+section.aboutme div.box div.presentation div.links li a img:hover {
+    transform: translateY(-5px);
+}
+
+/* ========================================= */
+/*  Flying Footer */
+/* ========================================= */
+
+section.aboutme div.footer {
+    margin-top: 80px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    font-family: var(--font-para);
+    color: white;
+}
+
+section.aboutme div.footer a {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
