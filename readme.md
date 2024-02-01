@@ -2,9 +2,9 @@
   <img width="800px" src="banner.png">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Accessibility-partially_conform-orange">
-  <img src="https://img.shields.io/badge/Pages-Offline-lightgray">
-  <img src="https://img.shields.io/github/issues/timothydeletrez/hestoryabe?label=Issues&color=blue">
+  <img src="https://img.shields.io/badge/Accessibility-partially_conform-orange&style=for-the-badge">
+  <img src="https://img.shields.io/badge/Pages-Offline-lightgray&style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/timothydeletrez/hestoryabe?label=Issues&color=blue&style=for-the-badge">
 </p>
 
 This is the source code of the portfolio of HESTORYA.
