@@ -1,4 +1,6 @@
-  <h1 align="center">Portfolio of HESTORYA</h1>
+<p align="center">
+  <img width="800px" src="banner.png">
+</p>
 <p align="center">
   <img src="https://img.shields.io/badge/Accessibility-partially_conform-orange">
   <img src="https://img.shields.io/badge/Pages-Offline-lightgray">
