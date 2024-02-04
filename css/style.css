@@ -121,7 +121,9 @@ section.aboutme div.box {
 
 section.aboutme div.box img.pdp {
     width: 512px;
+    max-width: 720px;
     height: 512px;
+    max-height: 720px;
     margin-top: 85px;
 }
 
@@ -186,4 +188,95 @@ section.aboutme div.footer a {
     color: white;
     cursor: pointer;
     text-decoration: underline;
+}
+
+/* ========================================= */
+/*  Tablet Adjustement */
+/* ========================================= */
+
+@media screen and (max-width: 1240px) {
+    body {
+        overflow: scroll;
+    }
+
+    section.aboutme h1.title::before {
+        display: none;
+    }
+
+    section.aboutme {
+        height: 100%;
+    }
+
+    section.aboutme div.box {
+        display: block;
+    }
+    
+    
+    section.aboutme div.box img.pdp {
+        width: 100%;
+        height: 100%;
+        margin-top: 85px;
+    }
+
+    section.aboutme div.box div.presentation {
+        margin-left: 0;
+    }
+
+    section.aboutme div.footer {
+        transform: translateY(-30px);
+        float: none;
+        width: auto;
+    }
+
+    section.aboutme div.footer a,
+    section.aboutme div.footer p {
+        font-size: 0.7em;
+    }
+}
+
+/* ========================================= */
+/*  Mobile Adjustement */
+/* ========================================= */
+
+@media screen and (max-width: 620px) {
+    section.aboutme {
+        padding: 40px;
+        height: auto;
+    }
+
+    section.aboutme h1.title {
+        display: none;
+    }
+
+    section.aboutme h1.title {
+        display: none;
+    }
+
+    section.aboutme div.box img.pdp {
+        margin-top: 5px;
+    }
+
+    section.aboutme div.box div.presentation {
+        margin-top: 20px;
+    }
+
+    section.aboutme div.box div.presentation h1.name {
+        font-size: 2.5em;
+    }
+
+    section.aboutme div.box div.presentation p.desc {
+        font-size: 0.7em;
+    }
+
+    section.aboutme div.box div.presentation div.links {
+        width: 200px;
+    }
+
+    section.aboutme div.box div.presentation div.links li a img {
+        width: 60px;
+    }
+
+    section.aboutme div.footer {
+        display: block;
+    }
 }
